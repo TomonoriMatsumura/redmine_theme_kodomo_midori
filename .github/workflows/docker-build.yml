@@ -9,6 +9,9 @@ jobs:
   deploy:
     runs-on: ubuntu-latest
     steps:
+      - name: Show ref
+        run: echo $GITHUB_REF_NAME
+
       - name: Checkout
         uses: actions/checkout@v2
         with:
