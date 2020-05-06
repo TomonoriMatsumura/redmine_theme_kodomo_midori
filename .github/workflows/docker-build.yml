@@ -3,7 +3,7 @@ name: Docker build
 on:
   create:
     tags:
-      - v*
+      - "*"
 
 jobs:
   deploy:
